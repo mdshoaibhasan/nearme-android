@@ -1,0 +1,8 @@
+{
+  "name": "Remix NearMe – Local Business \u0026 Street Vendor Discovery",
+  "description": "Discover nearby local shops, grocery stores, food outlets and mobile street vendors in Bangladesh. Material 3 Android discovery prototype.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

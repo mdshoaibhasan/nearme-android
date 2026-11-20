@@ -1,0 +1,260 @@
+package com.nearme.app.data
+
+import com.nearme.app.model.Business
+import com.nearme.app.model.BusinessCategory
+import com.nearme.app.model.Product
+
+object MockData {
+    val sampleBusinesses = listOf(
+        Business(
+            id = "b1",
+            ownerId = "owner_1",
+            name = "Bhai Bhai General Store & Mudir Dokan",
+            category = BusinessCategory.GROCERY,
+            description = "Your trusted neighborhood grocery store offering premium aromatic rice, pure mustard oil, pulses, and pantry essentials.",
+            contactNumber = "+880 1711-234567",
+            address = "House 14, Road 32, Dhanmondi",
+            area = "Dhanmondi, Dhaka",
+            latitude = 23.7512,
+            longitude = 90.3776,
+            distanceMeters = 350,
+            openingTime = "07:00 AM",
+            closingTime = "11:30 PM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.8,
+            reviewCount = 142,
+            imageUrl = "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=800",
+            products = listOf(
+                Product("p1_1", "b1", "Miniket Rice (Chalon Beel)", 380.0, "5 kg bag", "Grocery", true, "Aromatic white long-grain rice"),
+                Product("p1_2", "b1", "Fresh Cow Milk (Aarong Dairy)", 95.0, "1 Litre", "Grocery", true, "Pasteurized full cream cow milk"),
+                Product("p1_3", "b1", "Teer Pure Mustard Oil", 290.0, "1 Litre", "Grocery", true, "Pungent cold-pressed mustard oil")
+            )
+        ),
+        Business(
+            id = "b2",
+            ownerId = "owner_2",
+            name = "Mama's Special Tong & Malai Cha",
+            category = BusinessCategory.TEA_TONG,
+            description = "Legendary roadside tea tong famous for hand-whipped dense malai cha, butter toast, and ginger tea.",
+            contactNumber = "+880 1822-456789",
+            address = "Opposite TSC Gate, Dhaka University Campus",
+            area = "Nilkhet / TSC, Dhaka",
+            latitude = 23.7335,
+            longitude = 90.3927,
+            distanceMeters = 650,
+            openingTime = "06:30 AM",
+            closingTime = "01:00 AM",
+            isOpen = true,
+            isStreetVendor = true,
+            isCheckInActive = true,
+            checkInLocation = "Beside TSC Playground shade",
+            checkInExpiresAt = "11:00 PM Today",
+            rating = 4.9,
+            reviewCount = 388,
+            imageUrl = "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800",
+            products = listOf(
+                Product("p2_1", "b2", "Special Shahi Malai Cha", 25.0, "Cup", "Tea", true, "Thick clotted milk cream tea"),
+                Product("p2_2", "b2", "Kada Rong Cha with Ginger", 10.0, "Cup", "Tea", true, "Black spiced liquor tea"),
+                Product("p2_3", "b2", "Crispy Butter Toast", 15.0, "Pair", "Snacks", true, "Salted toasted biscuit")
+            )
+        ),
+        Business(
+            id = "b3",
+            ownerId = "owner_3",
+            name = "Karwan Bazar Fresh Fruits & Juice Bar",
+            category = BusinessCategory.FRUITS,
+            description = "Direct wholesale fruit seller stocking handpicked seasonal Rajshahi mangoes, pineapples, and fresh juices.",
+            contactNumber = "+880 1913-789012",
+            address = "Shed 4, Karwan Bazar Roundabout",
+            area = "Karwan Bazar, Dhaka",
+            latitude = 23.7533,
+            longitude = 90.3929,
+            distanceMeters = 1200,
+            openingTime = "06:00 AM",
+            closingTime = "10:00 PM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.7,
+            reviewCount = 95,
+            imageUrl = "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=800",
+            products = listOf(
+                Product("p3_1", "b3", "Sweet Amrapali Mangoes", 180.0, "1 kg", "Fruits", true, "Naturally ripened sweet mangoes"),
+                Product("p3_2", "b3", "Fresh Green Coconut (Daab)", 120.0, "Piece", "Fruits", true, "Sweet refreshing coconut water")
+            )
+        ),
+        Business(
+            id = "b4",
+            ownerId = "owner_4",
+            name = "Rabindra Sarobar Fuchka & Chotpoti Van",
+            category = BusinessCategory.MOBILE_VENDOR,
+            description = "Crispiest handmade fuchkas filled with spicy potato mash, boiled chickpeas, and tangy mint tetul tok.",
+            contactNumber = "+880 1688-991122",
+            address = "Near Amphitheater Walkway, Dhanmondi Lake",
+            area = "Dhanmondi 8/A, Dhaka",
+            latitude = 23.7461,
+            longitude = 90.3752,
+            distanceMeters = 450,
+            openingTime = "02:00 PM",
+            closingTime = "10:30 PM",
+            isOpen = true,
+            isStreetVendor = true,
+            isCheckInActive = true,
+            checkInLocation = "Lakeside Bench #4, Rabindra Sarobar",
+            checkInExpiresAt = "10:30 PM Today",
+            rating = 4.9,
+            reviewCount = 512,
+            imageUrl = "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800",
+            products = listOf(
+                Product("p4_1", "b4", "Special Doi Fuchka", 120.0, "10 pcs plate", "Street Food", true, "Fuchka crowned with sweet curd"),
+                Product("p4_2", "b4", "Crispy Tok Fuchka Platter", 80.0, "10 pcs plate", "Street Food", true, "Spicy tamarind mint water")
+            )
+        ),
+        Business(
+            id = "b5",
+            ownerId = "owner_5",
+            name = "Sabji Biponi (Mohammadpur Farm Veggies)",
+            category = BusinessCategory.VEGETABLES,
+            description = "Crisp farm vegetables supplied daily from Savar and Munshiganj farmers. Fresh, chemical-free produce.",
+            contactNumber = "+880 1733-112233",
+            address = "Shop 12, Krishi Market, Mohammadpur",
+            area = "Mohammadpur, Dhaka",
+            latitude = 23.7658,
+            longitude = 90.3621,
+            distanceMeters = 800,
+            openingTime = "06:00 AM",
+            closingTime = "09:00 PM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.6,
+            reviewCount = 84,
+            imageUrl = "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800",
+            products = listOf(
+                Product("p5_1", "b5", "Fresh Red Tomatoes", 65.0, "1 kg", "Vegetables", true, "Farm fresh ripe tomatoes"),
+                Product("p5_2", "b5", "Green Chili & Coriander Bundle", 30.0, "Bundle", "Vegetables", true, "Spicy chilies and fresh cilantro")
+            )
+        ),
+        Business(
+            id = "b6",
+            ownerId = "owner_6",
+            name = "Bengal Bakery & Confectionery",
+            category = BusinessCategory.BAKERY,
+            description = "Freshly baked artisan milk breads, vegetable patties, and chicken rolls baked morning and evening.",
+            contactNumber = "+880 1720-998877",
+            address = "Road 11, Block D, Banani",
+            area = "Banani, Dhaka",
+            latitude = 23.7937,
+            longitude = 90.4066,
+            distanceMeters = 2100,
+            openingTime = "08:00 AM",
+            closingTime = "11:00 PM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.8,
+            reviewCount = 215,
+            imageUrl = "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800",
+            products = listOf(
+                Product("p6_1", "b6", "Soft Butter Milk Bread", 75.0, "400g loaf", "Bakery", true, "Golden fluffy bread"),
+                Product("p6_2", "b6", "Crispy Chicken Puff Patty", 60.0, "Piece", "Bakery", true, "Flaky seasoned chicken patty")
+            )
+        ),
+        Business(
+            id = "b7",
+            ownerId = "owner_7",
+            name = "Al-Madina Halal Meat & Poultry",
+            category = BusinessCategory.MEAT_FISH,
+            description = "100% Halal slaughtered fresh chicken, lean beef cuts, goat mutton, and river fish dressed to your choice.",
+            contactNumber = "+880 1855-334455",
+            address = "Market Gate 2, Mirpur 1 Kacha Bazar",
+            area = "Mirpur 1, Dhaka",
+            latitude = 23.7956,
+            longitude = 90.3537,
+            distanceMeters = 2800,
+            openingTime = "06:30 AM",
+            closingTime = "08:30 PM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.7,
+            reviewCount = 167,
+            imageUrl = "https://images.unsplash.com/photo-1588347818036-558601350947?w=800",
+            products = listOf(
+                Product("p7_1", "b7", "Fresh Dressed Broiler Chicken", 210.0, "1 kg", "Meat", true, "Clean skinless chicken"),
+                Product("p7_2", "b7", "Prime Bone-In Beef", 750.0, "1 kg", "Meat", true, "Tender grass-fed beef")
+            )
+        ),
+        Business(
+            id = "b8",
+            ownerId = "owner_8",
+            name = "Shad Tehari Ghor & Shahi Biryani",
+            category = BusinessCategory.STREET_FOOD,
+            description = "Authentic mustard-oil Old Dhaka beef tehari simmered with chinigura rice and green chilies.",
+            contactNumber = "+880 1712-887766",
+            address = "18 Nazira Bazar Lane, Old Dhaka",
+            area = "Nazira Bazar, Dhaka",
+            latitude = 23.7198,
+            longitude = 90.4014,
+            distanceMeters = 3400,
+            openingTime = "11:30 AM",
+            closingTime = "02:00 AM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.9,
+            reviewCount = 630,
+            imageUrl = "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800",
+            products = listOf(
+                Product("p8_1", "b8", "Authentic Beef Tehari (Full)", 170.0, "Full Plate", "Food", true, "Chinigura rice with tender beef cubes"),
+                Product("p8_2", "b8", "Traditional Spicy Borhani", 50.0, "Glass", "Drinks", true, "Mint yogurt drink")
+            )
+        ),
+        Business(
+            id = "b9",
+            ownerId = "owner_9",
+            name = "Green Care 24/7 Pharmacy & First Aid",
+            category = BusinessCategory.PHARMACY,
+            description = "Licensed community pharmacy stocking registered OTC drugs, baby food, and medical essentials.",
+            contactNumber = "+880 1777-665544",
+            address = "Plot 18, Sector 4, Jashimuddin Road, Uttara",
+            area = "Uttara, Dhaka",
+            latitude = 23.8675,
+            longitude = 90.4012,
+            distanceMeters = 4200,
+            openingTime = "12:00 AM",
+            closingTime = "11:59 PM",
+            isOpen = true,
+            isStreetVendor = false,
+            rating = 4.9,
+            reviewCount = 304,
+            imageUrl = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800",
+            products = listOf(
+                Product("p9_1", "b9", "Napa Extra 500mg Paracetamol", 30.0, "Strip of 10", "Pharmacy", true, "Pain and fever relief"),
+                Product("p9_2", "b9", "ORSaline-N Electrolytes", 7.0, "Sachet", "Pharmacy", true, "Oral rehydration salt")
+            )
+        ),
+        Business(
+            id = "b10",
+            ownerId = "owner_10",
+            name = "Rahmatullah Mobile Jhalmuri Cart",
+            category = BusinessCategory.MOBILE_VENDOR,
+            description = "Crisp puffed muri mixed on the spot with mustard oil, boiled peas, raw onions, and coconut chips.",
+            contactNumber = "+880 1966-223344",
+            address = "Near Footbridge Ramp, Farmgate",
+            area = "Farmgate, Dhaka",
+            latitude = 23.7570,
+            longitude = 90.3888,
+            distanceMeters = 1100,
+            openingTime = "01:00 PM",
+            closingTime = "09:30 PM",
+            isOpen = true,
+            isStreetVendor = true,
+            isCheckInActive = true,
+            checkInLocation = "Farmgate Footbridge North Entrance",
+            checkInExpiresAt = "09:30 PM Today",
+            rating = 4.8,
+            reviewCount = 420,
+            imageUrl = "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800",
+            products = listOf(
+                Product("p10_1", "b10", "Special Masala Jhalmuri Thonga", 30.0, "Paper Cone", "Snacks", true, "Extra mustard oil and coconut chips")
+            )
+        )
+    )
+}
